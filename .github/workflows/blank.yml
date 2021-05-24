@@ -21,6 +21,6 @@ jobs:
       if: always()
       with:
         name: output
-        path: 
+        path: ""
       env:
         RUNNER: ${{ toJson(runner) }}
