@@ -16,11 +16,11 @@ jobs:
         GITHUB: ${{ toJson(github) }}
       with:
         notebook: "calculation_v2.ipynb"
-        isReport: False
+        isReport: True
     - uses: actions/upload-artifact@master
       if: always()
       with:
         name: output
-        path: ${{ RUNNER.temp }}/nb-runner
+        path: "output.ipynb"
       env:
         RUNNER: ${{ toJson(runner) }}
