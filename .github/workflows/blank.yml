@@ -17,7 +17,6 @@ jobs:
       with:
         notebook: "calculation_v2.ipynb"
         isReport: False
-        poll: True
     - uses: actions/upload-artifact@master
       if: always()
       with:
