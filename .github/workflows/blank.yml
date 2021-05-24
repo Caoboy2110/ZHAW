@@ -21,6 +21,6 @@ jobs:
       if: always()
       with:
         name: output
-        path: "output.ipynb"
+        path: 
       env:
         RUNNER: ${{ toJson(runner) }}
